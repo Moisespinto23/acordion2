@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+ 
+  }
+
+  body {
+
+    font-family:"Work Sans";
+    background-color:hsl(292, 16%, 49%) ;
+    
+  }
+  .container {
+    display: flex;
+    background-color:hsl(0, 0%, 100%);
+    width:  450px;
+    height: 400px ;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 13px;
+    bottom:200px ;
+    left: 300px;
+  }
+
+  p{
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  summary:hover{
+    color: hsl(293, 61%, 52%);
+    cursor: pointer;
+    transition: 0.10s;
+ 
+  }
+.ima{
+  height: 30px;
+  right: 180px;
+  top: 20px;
+}
+h1{
+  color: blueviolet;
+  left: 50px;
+  bottom: 25px;
+}
+details summary::marker {
+  content: "💻 ";
+  color: indigo;
+ 
+}
+
+/* Flecha en contenido desplegado */
+details[open] summary::marker {
+  content: "📲 ";
+}
+
